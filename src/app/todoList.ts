@@ -1,15 +1,15 @@
-import { TodoItem } from "./todoItem";
+import { TodoItem } from './todoItem';
 
 export class TodoList {
-    constructor(public user: string, private todoItems: TodoItem[] = []) {
-        //no statements required
-    }
+  constructor(public user: string, private todoItems: TodoItem[] = []) {
+    //no statements required
+  }
 
-    get items(): readonly TodoItem[] {
-        return this.todoItems;
-    }
+  get items(): readonly TodoItem[] {
+    return this.todoItems;
+  }
 
-    addItem(task: string) {
-        this.todoItems.push(new TodoItem(task))
-    }
+  addItem(task: string) {
+    this.todoItems.push(new TodoItem(task));
+  }
 }

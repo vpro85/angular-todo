@@ -7,14 +7,14 @@ import { TodoItem } from './todoItem';
   standalone: true,
   imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'todo';
-  private list = new TodoList("Bob", [
-    new TodoItem("Go for run", true),
-    new TodoItem("Get flowers"),
-    new TodoItem("Collect tickets"),
+  private list = new TodoList('Bob', [
+    new TodoItem('Go for run', true),
+    new TodoItem('Get flowers'),
+    new TodoItem('Collect tickets'),
   ]);
 
   get username(): string {
@@ -22,6 +22,6 @@ export class AppComponent {
   }
 
   get itemCount(): number {
-    return this.list.items.filter(item => !item.complete).length;
+    return this.list.items.filter((item) => !item.complete).length;
   }
 }
