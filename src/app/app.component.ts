@@ -48,7 +48,9 @@ export class AppComponent {
   }
 
   get items(): readonly TodoItem[] {
-    return this.list.items.filter((item) => !item.complete);
+    return this.list.items.filter(
+      (item) => this.showComplete || !item.complete
+    );
   }
 
   addItem(newItem: string) {
@@ -57,5 +59,5 @@ export class AppComponent {
     }
   }
 
-  showComplete: any;
+  showComplete: boolean = false;
 }
