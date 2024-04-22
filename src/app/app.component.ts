@@ -21,6 +21,7 @@ import { TodoItem } from './todoItem';
     MatToolbarModule,
     MatIconModule,
     MatBadgeModule,
+    MatButtonModule,
     MatTableModule,
     MatCheckboxModule,
     MatFormFieldModule,
