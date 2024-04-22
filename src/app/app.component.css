@@ -17,3 +17,5 @@
 .addButton {
   margin: 5px;
 }
+
+.toggleContainer { margin: 15px; display: flex;}
