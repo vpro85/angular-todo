@@ -56,4 +56,6 @@ export class AppComponent {
       this.list.addItem(newItem);
     }
   }
+
+  showComplete: any;
 }
